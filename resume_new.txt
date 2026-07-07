@@ -1,0 +1,63 @@
+Christopher D. Carner
+Apex, NC | 919-673-8872 | christoph.d.carner@gmail.com | https://www.linkedin.com/in/christopher-carner-01022a73/
+
+PROFESSIONAL SUMMARY
+Accomplished Senior Software Engineer with over 20 years of experience specializing in 3D computer graphics, geometric algorithms, and cloud-integrated CAD modeling. Proven track record of leading cross-functional teams to architect scalable, high-performance software systems utilizing C++, Python, and modern AI/ML frameworks. Expert in SOLID design principles, multithreaded systems, and driving robust Agile/DevOps engineering practices. Held U.S. Security Clearance for critical DoD projects.
+
+TECHNICAL SKILLS
+- Languages: C++/C, Python, Java, JavaScript, SQL, HTML5, CSS
+- 3D Graphics & Math: OpenGL, OpenSceneGraph, Qt, MFC, Knitro, 3D CAD Modeling, Image Processing
+- Frameworks & Libraries: STL, Boost, Django, Flask, Google Test
+- Architecture & Methodology: SOLID Design, Object-Oriented Design (OOD), Design Patterns, Multithreaded Systems, Agile/Scrum, CI/CD
+- Tools & Cloud: Claude Code, GitHub Copilot, AWS, Docker, Git/Gerrit, Jira, Visual Studio, VS Code, Linux/Ubuntu
+
+PROFESSIONAL EXPERIENCE
+
+Align Technology – Morrisville, NC
+Senior Software Engineer | 2021 – Present
+- Architect and develop high-performance geometry and optimization algorithms for cloud-based 3D-printed dental device CAD software.
+- Design and deploy ML models for automated dental feature construction, significantly improving diagnostic and modeling accuracy.
+- Serve as Technical Lead on net-new products, driving architectural decisions using SOLID principles to ensure long-term scalability and code maintainability.
+- Collaborate closely with cross-functional teams of biomechanical and 3D printing engineers to translate complex physical requirements into seamless software solutions.
+- Champion engineering excellence by establishing robust unit/system testing benchmarks and mentoring junior developers on advanced software engineering principles.
+
+Garmin International – Cary, NC
+Senior Software Engineer | 2014 – 2021
+- Engineered low-latency, multithreaded 3D-graphical navigation software tailored for resource-constrained embedded devices.
+- Executed the full software development lifecycle (SDLC)—including requirements analysis, effort estimation, feature implementation, and rigorous testing—within an Agile framework.
+- Streamlined development pipelines by integrating and maintaining complex 3rd party and open-source code libraries.
+- Partnered with distributed Software Quality Assurance (SQA) and remote engineering teams via CI/CD pipelines to ensure seamless, high-quality feature deployments.
+
+Ultra Electronics – 3Phoenix – Wake Forest, NC
+Senior Software Engineer | 2012 – 2014
+- Developed innovative, real-time 3D display solutions for situational awareness, enabling the processing of high-resolution, 360-degree panoramic imagery and motion video.
+- Led the GUI development and test control systems for torpedo test software deployed by the Department of Defense (DoD).
+- Managed end-to-end prototyping, system design, and requirements analysis under strict compliance protocols. (Maintained U.S. Security Clearance)
+
+Applied Research Associates – Raleigh, NC
+Senior Software Engineer & Scrum Master | 2008 – 2012
+- Utilized advanced design patterns to architect object-oriented, 3D-based weaponeering and simulation tools for DoD agencies.
+- Served as Scrum Master, managing cross-functional groups of developers and engineers through rapid Agile deployment cycles.
+- Spearheaded the technical vision and development for a core 3D model generation component within a massive, complex multithreaded application.
+- Authored technical design documentation and delivered project presentations directly to military and government stakeholders. (Maintained U.S. Security Clearance)
+
+Textile/Clothing Technology Corporation – Cary, NC
+Software Engineer | 2005 – 2008
+- Designed and implemented computer vision algorithms to process and visualize 3D point cloud data generated from 2D images on full-body scanner hardware.
+- Maintained, optimized, and provided end-to-end software support for the proprietary 3D body scanning ecosystem.
+
+Stony Brook University (Center for Visual Computing) – Stony Brook, NY
+Research Assistant | 2002 – 2005
+- Researched and developed robust algorithms for 3D object modeling, geometric processing, and computer animation, producing functional software prototypes to validate theoretical concepts.
+
+EDUCATION & TRAINING
+- M.S. in Computer Science – Stony Brook University, Stony Brook, NY (2003)
+- B.S. in Computer Science & Applied Mathematics – Siena College, Loudonville, NY (2001)
+- Training: AWS Cloud Practitioner (2022) | Harvard CS50: Web Programming with Python and JS (2020)
+
+PUBLICATIONS & AWARDS
+- ARA Technical Achievement Award (2010)
+- Topology-based Surface Mapping with Exact Feature Alignment – IEEE International Visualization Conference (2005)
+- ElasticPaint: A Particle System for Feature Mapping with Minimum Distortion – Computer Animation and Social Agents (2003)
+- Morphing Polygonal Objects – Annual Hudson River Undergraduate Mathematics Conference (2001)
+- Honors: Graduate Council Fellowship & Outstanding TA (Stony Brook) | Delta Epsilon Sigma & Dean's List (Siena)
