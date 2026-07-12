@@ -49,7 +49,7 @@ function splitMarkdownSections(markdown) {
 }
 
 if (resumeAnchor) {
-  fetch('public/resume_new.md')
+  fetch('./resume_new.md')
     .then((response) => {
       if (!response.ok) {
         throw new Error('Failed to load resume markdown');
