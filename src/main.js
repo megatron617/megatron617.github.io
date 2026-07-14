@@ -49,7 +49,7 @@ function splitMarkdownSections(markdown) {
 }
 
 if (resumeAnchor) {
-  fetch('./resume_new.md')
+  fetch('./resume_2026.md')
     .then((response) => {
       if (!response.ok) {
         throw new Error('Failed to load resume markdown');
@@ -94,21 +94,58 @@ camera.position.setX(-3);
 
 renderer.render(scene, camera);
 
-// Torus
+// Fancy centerpiece
 
-const geometry = new THREE.TorusGeometry(10, 3, 16, 100);
-const material = new THREE.MeshStandardMaterial({ color: 0xff6347 });
-const torus = new THREE.Mesh(geometry, material);
+const geometry = new THREE.TorusKnotGeometry(3.1, 0.9, 220, 20);
+const positionAttribute = geometry.attributes.position;
+const colors = [];
+const blue = new THREE.Color(0x3b82f6);
+const purple = new THREE.Color(0x8b5cf6);
+const green = new THREE.Color(0x22c55e);
 
-scene.add(torus);
+for (let i = 0; i < positionAttribute.count; i += 1) {
+  const y = positionAttribute.getY(i);
+  const t = THREE.MathUtils.clamp((y + 2.6) / 5.2, 0, 1);
+  const color = new THREE.Color();
+
+  if (t < 0.5) {
+    color.lerpColors(blue, purple, t * 2);
+  } else {
+    color.lerpColors(purple, green, (t - 0.5) * 2);
+  }
+
+  colors.push(color.r, color.g, color.b);
+}
+
+geometry.setAttribute('color', new THREE.Float32BufferAttribute(colors, 3));
+geometry.computeVertexNormals();
+
+const material = new THREE.MeshStandardMaterial({
+  vertexColors: true,
+  emissive: 0x101a2f,
+  emissiveIntensity: 0.25,
+  roughness: 0.25,
+  metalness: 0.7,
+});
+const fancyShape = new THREE.Mesh(geometry, material);
+fancyShape.position.set(-5, 0, -10);
+
+scene.add(fancyShape);
 
 // Lights
 
-const pointLight = new THREE.PointLight(0xffffff);
-pointLight.position.set(5, 5, 5);
+const ambientLight = new THREE.AmbientLight(0x2a2a4a, 0.45);
 
-const ambientLight = new THREE.AmbientLight(0xffffff);
-scene.add(pointLight, ambientLight);
+const pointLight = new THREE.PointLight(0xffffff, 2.2, 100);
+pointLight.position.set(12, 10, 8);
+
+const fillLight = new THREE.PointLight(0x4f46e5, 1.2, 100);
+fillLight.position.set(-10, -5, 12);
+
+const directionalLight = new THREE.DirectionalLight(0xffffff, 1.2);
+directionalLight.position.set(8, 15, 20);
+
+scene.add(ambientLight, pointLight, fillLight, directionalLight);
 
 // Helpers
 
@@ -120,18 +157,24 @@ scene.add(pointLight, ambientLight);
 
 function addStar() {
   const geometry = new THREE.SphereGeometry(0.25, 24, 24);
-  const material = new THREE.MeshStandardMaterial({ color: 0xffffff });
+  const material = new THREE.MeshStandardMaterial({
+    color: 0xffffff,
+    emissive: 0xffffff,
+    emissiveIntensity: 1.6,
+    roughness: 0.2,
+    metalness: 0.1,
+  });
   const star = new THREE.Mesh(geometry, material);
 
   const [x, y, z] = Array(3)
     .fill()
-    .map(() => THREE.MathUtils.randFloatSpread(100));
+    .map(() => THREE.MathUtils.randFloatSpread(500));
 
   star.position.set(x, y, z);
   scene.add(star);
 }
 
-Array(200).fill().forEach(addStar);
+Array(1000).fill().forEach(addStar);
 
 // Background
 
@@ -140,9 +183,15 @@ scene.background = spaceTexture;
 
 // Avatar
 
-const chrisTexture = new THREE.TextureLoader().load('chris.png');
+const chrisTexture = new THREE.TextureLoader().load('chris_professional_profile.png');
 
-const chris = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: chrisTexture }));
+const chris = new THREE.Mesh(
+  new THREE.BoxGeometry(3, 3, 3),
+  new THREE.MeshBasicMaterial({
+    map: chrisTexture,
+    color: new THREE.Color(0.6, 0.6, 0.6),
+  })
+);
 
 scene.add(chris);
 
@@ -176,7 +225,7 @@ function moveCamera() {
   moon.rotation.z += 0.05;
 
   chris.rotation.y += 0.01;
-  chris.rotation.z += 0.01;
+//  chris.rotation.z += 0.01;
 
   camera.position.z = t * -0.01;
   camera.position.x = t * -0.0002;
@@ -191,9 +240,9 @@ moveCamera();
 function animate() {
   requestAnimationFrame(animate);
 
-  torus.rotation.x += 0.01;
-  torus.rotation.y += 0.005;
-  torus.rotation.z += 0.01;
+  fancyShape.rotation.x += 0.01;
+  fancyShape.rotation.y += 0.008;
+  fancyShape.rotation.z += 0.012;
 
   moon.rotation.x += 0.005;
 

@@ -1,24 +1,24 @@
 # Christopher D. Carner
-Apex, NC | 919-673-8872 | christoph.d.carner@gmail.com | https://www.linkedin.com/in/christopher-carner-01022a73/
+Apex, NC | 919-673-8872 | [christoph.d.carner@gmail.com](mailto:christoph.d.carner@gmail.com) | [https://www.linkedin.com/in/christopher-carner-01022a73/](https://www.linkedin.com/in/christopher-carner-01022a73/)
 
 ## Professional Summary
-Accomplished Senior Software Engineer with over 20 years of experience specializing in 3D computer graphics, geometric algorithms, and cloud-integrated CAD modeling. Proven track record of leading cross-functional teams to architect scalable, high-performance software systems utilizing C++, Python, and modern AI/ML frameworks. Expert in SOLID design principles, multithreaded systems, and driving robust Agile/DevOps engineering practices. Held U.S. Security Clearance for critical DoD projects.
+Accomplished Senior Software Engineer with over 20 years of experience specializing in custom 3D geometric algorithms, graphics, and cloud-integrated modeling. Proven track record of leading cross-functional teams to architect scalable, high-performance software systems utilizing C++, Python, and modern ML modeling. Expert in SOLID design principles, design patterns, multithreaded systems, and driving robust engineering practices. Held U.S. Security Clearance for critical DoD projects.
 
 ## Technical Skills
-- **Languages:** C++/C, Python, Java, JavaScript, SQL, HTML5, CSS
-- **3D Graphics & Math:** OpenGL, OpenSceneGraph, Qt, MFC, Knitro, 3D CAD Modeling, Image Processing
+- **Languages:** C++/C, Python, Java, JavaScript, HTML5, CSS
+- **3D Modeling & Math:** 3D CAD Modeling, OpenGL, Qt, MFC, OpenSceneGraph, Knitro, Image Processing
 - **Frameworks & Libraries:** STL, Boost, Django, Flask, Google Test
-- **Architecture & Methodology:** SOLID Design, Object-Oriented Design (OOD), Design Patterns, Multithreaded Systems, Agile/Scrum, CI/CD
-- **Tools & Cloud:** Claude Code, GitHub Copilot, AWS, Docker, Git/Gerrit, Jira, Visual Studio, VS Code, Linux/Ubuntu
+- **Architecture & Methodology:** SOLID Design Principles, Object-Oriented Design (OOD), Design Patterns, Multithreaded Systems, Agile/Scrum, CI/CD
+- **Tools & Cloud:** Claude Code, GitHub Copilot, Amazon Kiro, Visual Studio, VS Code, Linux/Ubuntu, AWS, Docker, Git, Jira
 
 ## Professional Experience
-
 ### Align Technology — Morrisville, NC
 *Senior Software Engineer* | 2021 – Present
 - Architect and develop high-performance geometry and optimization algorithms for cloud-based 3D-printed dental device CAD software.
 - Design and deploy ML models for automated dental feature construction, significantly improving diagnostic and modeling accuracy.
 - Serve as Technical Lead on new products, driving architectural decisions using SOLID principles to ensure long-term scalability and code maintainability.
 - Collaborate closely with cross-functional teams of biomechanical and 3D printing engineers to translate complex physical requirements into seamless software solutions.
+- Integrate AI tool usage and practices into development workflows.
 - Champion engineering excellence by establishing robust unit/system testing benchmarks and mentoring junior developers on advanced software engineering principles.
 
 ### Garmin International — Cary, NC
@@ -35,7 +35,7 @@ Accomplished Senior Software Engineer with over 20 years of experience specializ
 - Managed end-to-end prototyping, system design, and requirements analysis under strict compliance protocols. *(Maintained U.S. Security Clearance)*
 
 ### Applied Research Associates — Raleigh, NC
-*Senior Software Engineer & Scrum Master* | 2008 – 2012
+*Senior Software Engineer* | 2008 – 2012
 - Utilized advanced design patterns to architect object-oriented, 3D-based weaponeering and simulation tools for DoD agencies.
 - Served as Scrum Master, managing cross-functional groups of developers and engineers through rapid Agile deployment cycles.
 - Spearheaded the technical vision and development for a core 3D model generation component within a massive, complex multithreaded application.
@@ -61,3 +61,4 @@ Accomplished Senior Software Engineer with over 20 years of experience specializ
 - *ElasticPaint: A Particle System for Feature Mapping with Minimum Distortion* – Computer Animation and Social Agents (2003)
 - *Morphing Polygonal Objects* – Annual Hudson River Undergraduate Mathematics Conference (2001)
 - **Honors:** Graduate Council Fellowship & Outstanding TA (Stony Brook) | Delta Epsilon Sigma & Dean's List (Siena)
+
